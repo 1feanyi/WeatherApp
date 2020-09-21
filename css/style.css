@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
+  font-family: sans-serif;
+  color: white;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 5vh;
+  justify-content: center;
+  align-content: center;
+}
+
+.grid-item-1 {
+  grid-column: 1 / -1;
+  word-wrap: break-word;
+}
+
+.grid-item-2 {
+  grid-column: 2 / 3;
+}
+
+.grid-item-3 {
+  grid-column: 3 / -1;
+}
+
+.grid-item-4 {
+  grid-column: 1 / -1;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  grid-template-columns: 2fr, 1fr;
+  align-items: center;
+  font-size: 50px;
+}
+
+.temperature {
+  /* height: 20vh;
+  width: 50%; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.temperature {
+  flex-direction: column;
+}
+.temperature h2{  
+  text-align: justify;
+  text-decoration: underline dotted lightblue;
+}
+
+.temperature-icon {
+  transform: scale(2);
+}
+.temperature-section {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transform: scale(2);
+}
+
+.temperature-section span {
+  margin: 15px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.temperature-section h2 {
+  font-size: 60px;
+}
+
+.temperature-description {
+  font-size: 30px;
+}
